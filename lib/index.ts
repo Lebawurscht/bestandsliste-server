@@ -14,4 +14,5 @@ else {
   app.use (express.static ('./web'));
 }
 
-app.listen(4711)
+app.listen(80);
+console.log('app listening on port 80');
