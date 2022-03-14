@@ -6,7 +6,7 @@ WORKDIR /bestandsliste
 COPY . .
 
 RUN yarn; \
-  yarn compile;
+  yarn compile; yarn run prisma migrate deploy;
 
 RUN git clone https://github.com/Lebawurscht/bestandsliste-client.git client; \
   cd client; yarn; yarn build; cp -r dist ../web; cd ..; rm -r client;
