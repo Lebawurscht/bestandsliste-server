@@ -25,6 +25,7 @@
     "routing-controllers": "^0.9.0"
   },
   "scripts": {
-    "start": "ts-node lib/index.ts"
+    "start": "ts-node lib/index.ts",
+    "compile": "tsc"
   }
 }
